@@ -1,17 +1,34 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <!--HTML file auto generated using EmulatorJS codehelper-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Super Mario 64</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
         <style>
             body, html {
                 margin: 0;
                 padding: 0;
+                height: 100%;
+                width: 100%;
+            }
+            #game-container {
+                width: 100%;
+                height: 100%;
+                max-width: 100%;
             }
         </style>
     </head>
     <body>
-        <div style="width:100%;height:100%;max-width:100%">
-            <div id="game"></div>
-        </div>
+        <main>
+            <div id="game-container">
+                <div id="game" aria-label="Game Display"></div>
+            </div>
+        </main>
+        <noscript>
+            <p>Your browser does not support JavaScript or it is disabled. The game will not load.</p>
+        </noscript>
         <script>
             EJS_player = "#game";
             EJS_core = "n64";
@@ -19,7 +36,8 @@
             EJS_color = "#0064ff";
             EJS_startOnLoaded = true;
             EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
-            EJS_gameUrl = "C:\Users\Sam Bell 4th\OneDrive\Desktop\sm64\Super Mario 64 (USA).z64";
+            // NOTE: Replace with the correct path to your game file
+            EJS_gameUrl = "./games/Super Mario 64 (USA).z64";
         </script>
         <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
     </body>
